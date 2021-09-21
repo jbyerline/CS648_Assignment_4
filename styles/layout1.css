@@ -1,0 +1,121 @@
+body {
+    width: 960px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: .75fr .5fr .75fr .75fr;
+    grid-template-rows: 50px;
+    gap: 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Blank Items Items"
+}
+
+.Logo {
+    height: 65px;
+    background-color: gray;
+    grid-area: Logo;
+}
+
+.Items {
+    padding-top: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Item-1 Item-2 Item-3 Item-4";
+    grid-area: Items;
+}
+
+.Item-1 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-2 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-3 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-4 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Image Image Image"
+    "Products Products Products"
+    "Rects Rects Rects"
+    "Rects Rects Rects"
+    "Copyright Copyright Copyright"
+}
+
+.Image {
+    height: 300px;
+    background-color: gray;
+    grid-area: Image;
+}
+
+.Products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-area: Products;
+    grid-template-areas:
+    "Product1 Product2"
+}
+.Product1 {
+    height: 150px;
+    background-color: gray;
+    grid-area: Product1;
+}
+.Product2 {
+    height: 150px;
+    background-color: gray;
+    grid-area: Product2;
+}
+
+.Copyright {
+    height: 50px;
+    background-color: gray;
+    grid-area: Copyright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

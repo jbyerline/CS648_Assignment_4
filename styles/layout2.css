@@ -1,0 +1,179 @@
+body {
+    width: 960px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: .75fr .5fr .75fr .75fr;
+    grid-template-rows: 50px;
+    gap: 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Blank Items Items"
+}
+
+.Logo {
+    height: 65px;
+    background-color: gray;
+    grid-area: Logo;
+}
+
+.Items {
+    padding-top: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Item-1 Item-2 Item-3 Item-4";
+    grid-area: Items;
+}
+
+.Item-1 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-2 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-3 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-4 {
+    height: 45px;
+    background-color: gray;
+    text-align: center;
+    grid-area: Item-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Rects Rects Rects"
+    "Rects Rects Rects"
+    "Rects Rects Rects"
+    "Copyright Copyright Copyright"
+}
+
+.Rects {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-area: Rects;
+    grid-template-areas:
+    "Rect1 Rect2 Rect3"
+    "Rect4 Rect5 Rect6"
+    "Rect7 Rect8 Rect9"
+}
+
+.Rect1 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect1;
+}
+
+.Rect2 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect2;
+}
+
+.Rect3 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect3;
+}
+
+.Rect4 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect4;
+}
+
+.Rect5 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect5;
+}
+
+.Rect6 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect6;
+}
+
+.Rect7 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect7;
+}
+
+.Rect8 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect8;
+}
+
+.Rect9 {
+    height: 150px;
+    align-items: center;
+    background-color: gray;
+    text-align: center;
+    grid-area: Rect9;
+}
+
+.Copyright {
+    height: 50px;
+    background-color: gray;
+    grid-area: Copyright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
